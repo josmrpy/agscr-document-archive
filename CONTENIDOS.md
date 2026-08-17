@@ -21,6 +21,14 @@ Este índice organiza las carpetas del archivo de acuerdo con las categorías pr
 | Acuerdos De Junta Directiva Nacional Periodo 2021 2022 | [Abrir](./descargas_scouts/Acuerdos%20De%20Junta%20Directiva%20Nacional%20Periodo%202021%202022/) |
 | Acuerdos Junta Directiva Nacional Periodo 2022 2023 | [Abrir](./descargas_scouts/Acuerdos%20Junta%20Directiva%20Nacional%20Periodo%202022%202023/) |
 | Acuerdos Junta Directiva Nacional Periodo 2023 2024 | [Abrir](./descargas_scouts/Acuerdos%20Junta%20Directiva%20Nacional%20Periodo%202023%202024/) |
+| Actas Cen 2024 2025 | [Abrir](./descargas_scouts/Actas%20Cen%202024%202025/) |
+| Actas De Comite Ejecutivo Periodo2025 2026 | [Abrir](./descargas_scouts/Actas%20De%20Comite%20Ejecutivo%20Periodo2025%202026/) |
+| Actas De Comite Ejecutivo Periodo 2026 2027 | [Abrir](./descargas_scouts/Actas%20De%20Comite%20Ejecutivo%20Periodo%202026%202027/) |
+| Asamblea Nacional 2022 | [Abrir](./descargas_scouts/Asamblea%20Nacional%202022/) |
+| Asamblea Nacional 2023 | [Abrir](./descargas_scouts/Asamblea%20Nacional%202023/) |
+| Asamblea Nacional 2024 | [Abrir](./descargas_scouts/Asamblea%20Nacional%202024/) |
+| Asamblea Nacional 2025 | [Abrir](./descargas_scouts/Asamblea%20Nacional%202025/) |
+| Asamblea Nacional 2026 | [Abrir](./descargas_scouts/Asamblea%20Nacional%202026/) |
 | Junta Directiva Nacional | [Abrir](./descargas_scouts/Junta%20Directiva%20Nacional/) |
 
 ---
@@ -32,6 +40,11 @@ Este índice organiza las carpetas del archivo de acuerdo con las categorías pr
 | Carpeta | Acceso |
 | --- | --- |
 | Gobernanza | [Abrir](./descargas_scouts/Gobernanza/) |
+| Politicas | [Abrir](./descargas_scouts/Politicas/) |
+| Protocolos | [Abrir](./descargas_scouts/Protocolos/) |
+| Manuales | [Abrir](./descargas_scouts/Manuales/) |
+| Lineamientos | [Abrir](./descargas_scouts/Lineamientos/) |
+| Convenios | [Abrir](./descargas_scouts/Convenios/) |
 
 ---
 
@@ -66,6 +79,9 @@ Este índice organiza las carpetas del archivo de acuerdo con las categorías pr
 | Programa Educativo | [Abrir](./descargas_scouts/Programa%20Educativo/) |
 | Manada | [Abrir](./descargas_scouts/Manada/) |
 | Tropa | [Abrir](./descargas_scouts/Tropa/) |
+| Comunidad | [Abrir](./descargas_scouts/Comunidad/) |
+| Wak | [Abrir](./descargas_scouts/Wak/) |
+| Emocion Arte | [Abrir](./descargas_scouts/Emocion%20Arte/) |
 
 ---
 
@@ -87,8 +103,8 @@ Este índice organiza las carpetas del archivo de acuerdo con las categorías pr
 | Carpeta | Acceso |
 | --- | --- |
 | Operaciones 2 | [Abrir](./descargas_scouts/Operaciones%202/) |
-| Protocolos | [Abrir](./descargas_scouts/Protocolos/) |
-| Lineamientos | [Abrir](./descargas_scouts/Lineamientos/) |
+| Kit De Herramientas Para Juntas De Grupo | [Abrir](./descargas_scouts/Kit%20De%20Herramientas%20Para%20Juntas%20De%20Grupo/) |
+| Kit Buenas Practicas Para Junta De Grupo | [Abrir](./descargas_scouts/Kit%20Buenas%20Practicas%20Para%20Junta%20De%20Grupo/) |
 
 ---
 
@@ -103,6 +119,9 @@ Este índice organiza las carpetas del archivo de acuerdo con las categorías pr
 | Guia De Uso De Marca | [Abrir](./descargas_scouts/Guia%20De%20Uso%20De%20Marca/) |
 | Fondos De Pantalla | [Abrir](./descargas_scouts/Fondos%20De%20Pantalla/) |
 | Tipografias | [Abrir](./descargas_scouts/Tipografias/) |
+| Material De Captacion | [Abrir](./descargas_scouts/Material%20De%20Captacion/) |
+| Promocionales Ninos | [Abrir](./descargas_scouts/Promocionales%20Ninos/) |
+| Plantillas Para Presentaciones | [Abrir](./descargas_scouts/Plantillas%20Para%20Presentaciones/) |
 
 ---
 
@@ -119,18 +138,9 @@ Este índice organiza las carpetas del archivo de acuerdo con las categorías pr
 
 ## Otras categorías
 
-Estas carpetas corresponden a documentos encontrados durante el rastreo que no se han reasignado manualmente a una de las categorías principales.
+Estas carpetas corresponden a contenido encontrado durante el rastreo que no encaja directamente en una de las categorías principales de la sección de Descargas, o cuya clasificación dentro del sitio no pudo determinarse con suficiente claridad.
 
 | Carpeta | Acceso |
 | --- | --- |
-| Asamblea Nacional | [Abrir](./descargas_scouts/Asamblea%20Nacional/) |
-| Comunidad | [Abrir](./descargas_scouts/Comunidad/) |
-| Convenios | [Abrir](./descargas_scouts/Convenios/) |
+| Descargas | [Abrir](./descargas_scouts/Descargas/) |
 | Estrategias | [Abrir](./descargas_scouts/Estrategias/) |
-| Emocion Arte | [Abrir](./descargas_scouts/Emocion%20Arte/) |
-| Manuales | [Abrir](./descargas_scouts/Manuales/) |
-| Material De Captacion | [Abrir](./descargas_scouts/Material%20De%20Captacion/) |
-| Plantillas Para Presentaciones | [Abrir](./descargas_scouts/Plantillas%20Para%20Presentaciones/) |
-| Politicas | [Abrir](./descargas_scouts/Politicas/) |
-| Promocionales Ninos | [Abrir](./descargas_scouts/Promocionales%20Ninos/) |
-| Wak | [Abrir](./descargas_scouts/Wak/) |
