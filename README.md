@@ -1,55 +1,6 @@
-# Asociación de Guías y Scouts de Costa Rica — Document Archive
+# Asociación de Guías y Scouts de Costa Rica — Archivo de Documentos
 
-This repository is an organized archive of publicly available documents published by the **Asociación de Guías y Scouts de Costa Rica (AGSCR)** through its official website, [Siempre Listos](https://siemprelistos.com/).
-
-The purpose of this repository is to keep these documents together in one place, making them easier to find and access without having to repeatedly download them from the original website.
-
-The archive contains documents from the different sections and subsections available through the organization's public **Descargas** section.
-
-## Contents
-
-* [`descargas_scouts/`](./descargas_scouts/) — Organized collection of the downloaded documents.
-* [`CONTENIDOS.md`](./CONTENIDOS.md) — Navigable index of the archived documents, organized by section and subsection.
-* `listado_documentos.csv` — Inventory of the documents collected, including titles, categories, URLs, and document IDs.
-* `.downloaded_ids.json` — Manifest used to keep track of documents that have already been collected.
-
-The Python scraper used to collect the documents is **not included** in this repository. This repository is intended to function as a document archive, not as a scraping tool.
-
-## Updates
-
-This archive may be updated periodically.
-
-When new documents become publicly available on the official website, the archive can be updated with the newly found files. Existing documents are not intentionally downloaded again when they are already present in the archive.
-
-The goal is for this repository to remain a maintained collection of publicly available documents rather than being a one-time snapshot.
-
-## Source
-
-The documents are collected from the official website of the Asociación de Guías y Scouts de Costa Rica:
-
-**Siempre Listos**
-<https://siemprelistos.com/>
-
-Downloads section:
-<https://siemprelistos.com/descargas/>
-
-The Asociación de Guías y Scouts de Costa Rica is a Costa Rican organization dedicated to non-formal education and providing opportunities for children and young people through its educational program.
-
-## Disclaimer
-
-This is an **unofficial, independent archive**.
-
-This repository is not operated, maintained, or endorsed by the Asociación de Guías y Scouts de Costa Rica.
-
-The documents contained in this repository remain the property of their respective authors and/or rights holders. No ownership over these materials is claimed.
-
-Please refer to the original website and the individual documents for applicable copyright, licensing, attribution, and usage conditions.
-
-The purpose of this archive is to preserve and organize documents that are publicly available through the organization's website and make them easier to access.
-
----
-
-## Asociación de Guías y Scouts de Costa Rica — Archivo de Documentos
+![Descargas](./assets/descargas.png)
 
 Este repositorio es un archivo organizado de documentos disponibles públicamente que han sido publicados por la **Asociación de Guías y Scouts de Costa Rica (AGSCR)** a través de su sitio web oficial, [Siempre Listos](https://siemprelistos.com/).
 
@@ -97,3 +48,56 @@ Los documentos contenidos en este repositorio pertenecen a sus respectivos autor
 Se recomienda consultar el sitio web original y cada documento para conocer las condiciones aplicables de derechos de autor, licencias, atribución y uso.
 
 El propósito de este archivo es conservar y organizar documentos que se encuentran disponibles públicamente en el sitio web de la organización y facilitar su acceso.
+
+---
+
+## Asociación de Guías y Scouts de Costa Rica — Document Archive
+
+![Descargas](./assets/descargas.png)
+
+This repository is an organized archive of publicly available documents published by the **Asociación de Guías y Scouts de Costa Rica (AGSCR)** through its official website, [Siempre Listos](https://siemprelistos.com/).
+
+The purpose of this repository is to keep these documents together in one place, making them easier to find and access without having to repeatedly download them from the original website.
+
+The archive contains documents from the different sections and subsections available through the organization's public **Descargas** section.
+
+## Contents
+
+* [`descargas_scouts/`](./descargas_scouts/) — Organized collection of the downloaded documents.
+* [`CONTENIDOS.md`](./CONTENIDOS.md) — Navigable index of the archived documents, organized by section and subsection.
+* `listado_documentos.csv` — Inventory of the documents collected, including titles, categories, URLs, and document IDs.
+* `.downloaded_ids.json` — Manifest used to keep track of documents that have already been collected.
+
+The Python scraper used to collect the documents is **not included** in this repository. This repository is intended to function as a document archive, not as a scraping tool.
+
+## Updates
+
+This archive may be updated periodically.
+
+When new documents become publicly available on the official website, the archive can be updated with the newly found files. Existing documents are not intentionally downloaded again when they are already present in the archive.
+
+The goal is for this repository to remain a maintained collection of publicly available documents rather than being a one-time snapshot.
+
+## Source
+
+The documents are collected from the official website of the Asociación de Guías y Scouts de Costa Rica:
+
+**Siempre Listos**
+<https://siemprelistos.com/>
+
+Downloads section:
+<https://siemprelistos.com/descargas/>
+
+The Asociación de Guías y Scouts de Costa Rica is a Costa Rican organization dedicated to non-formal education and providing opportunities for children and young people through its educational program.
+
+## Disclaimer
+
+This is an **unofficial, independent archive**.
+
+This repository is not operated, maintained, or endorsed by the Asociación de Guías y Scouts de Costa Rica.
+
+The documents contained in this repository remain the property of their respective authors and/or rights holders. No ownership over these materials is claimed.
+
+Please refer to the original website and the individual documents for applicable copyright, licensing, attribution, and usage conditions.
+
+The purpose of this archive is to preserve and organize documents that are publicly available through the organization's website and make them easier to access.

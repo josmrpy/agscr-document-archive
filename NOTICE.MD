@@ -21,6 +21,8 @@ indicadas en cada documento.
 Este repositorio no pretende otorgar, transferir ni ampliar ningún
 derecho sobre materiales de terceros.
 
+Recursos visuales: Los banners utilizados en este índice son adaptaciones y recortes realizados a partir de imágenes y recursos gráficos publicados originalmente por la Asociación de Guías y Scouts de Costa Rica en su sitio web oficial. No se reclama propiedad sobre dichos recursos.
+
 Fuente de los materiales:
 <https://siemprelistos.com/descargas/>
 
