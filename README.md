@@ -9,7 +9,7 @@ The archive contains documents from the different sections and subsections avail
 ## Contents
 
 * [`descargas_scouts/`](./descargas_scouts/) — Organized collection of the downloaded documents.
-* [`descargas_scouts/README.md`](./descargas_scouts/README.md) — Navigable index of the archived documents, organized by section and subsection.
+* [`CONTENIDOS.md`](./CONTENIDOS.md) — Navigable index of the archived documents, organized by section and subsection.
 * `listado_documentos.csv` — Inventory of the documents collected, including titles, categories, URLs, and document IDs.
 * `.downloaded_ids.json` — Manifest used to keep track of documents that have already been collected.
 
@@ -60,7 +60,7 @@ El archivo contiene documentos provenientes de las diferentes secciones y subsec
 ## Contenido
 
 * [`descargas_scouts/`](./descargas_scouts/) — Colección organizada de los documentos descargados.
-* [`descargas_scouts/README.md`](./descargas_scouts/README.md) — Índice navegable de los documentos archivados, organizado por sección y subsección.
+* [`CONTENIDOS.md`](./CONTENIDOS.md) — Índice navegable de los documentos archivados, organizado por sección y subsección.
 * `listado_documentos.csv` — Inventario de los documentos recopilados, incluyendo títulos, categorías, URLs e identificadores de los documentos.
 * `.downloaded_ids.json` — Registro utilizado para llevar el control de los documentos que ya han sido recopilados.
 
