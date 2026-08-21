@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>descargas | josmr.py</title>
+  <link rel="icon" href="favicon.ico?v=1" sizes="any">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="#home" class="nav-home">descargas</a>
+    <span class="nav-spacer"></span>
+    <a href="https://josmrpy.github.io/" target="_blank" rel="noopener">josmr.py ↗</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <p class="eyebrow">Guías y Scouts de Costa Rica</p>
+    <h1>Índice de <span class="accent">descargas</span></h1>
+    <p class="hero-bio">
+      Todos los documentos del archivo, organizados por categoría igual que en
+      la sección original de Descargas de Siempre Listos. Entrá a una carpeta
+      para ver y abrir sus archivos, o buscá directamente aquí.
+    </p>
+    <div class="search-wrap">
+      <input type="text" id="search" placeholder="Buscar carpeta… (ej. Asamblea, Manada, Gobernanza)"
+        autocomplete="off">
+    </div>
+    <p class="search-meta"><strong id="count-label">0</strong> carpetas · <span id="doc-count-label">0 documentos</span>
+    </p>
+  </section>
+
+  <hr class="divider">
+
+  <section id="categories-section">
+    <div id="categories"></div>
+    <p class="empty-hint" id="empty-state">No se encontró ninguna carpeta con ese nombre.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>built by Josimar (@josmr.py)</span>
+      <img src="favicon.ico?v=1" alt="" style="width:32px;height:32px;object-fit:contain;">
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    const CATEGORIES = [
+      {
+        category: "Junta Directiva Nacional", folders: [
+          "Actas De Junta Directiva Nacional Periodo 2021 2022",
+          "Actas De Junta Directiva Nacional Periodo 2022 2023",
+          "Actas De Junta Directiva Nacional Periodo 2023 2024",
+          "Actas De Junta Directiva Nacional Periodo 2024 2025",
+          "Actas De Junta Directiva Nacional Periodo 2025 2026",
+          "Actas De Junta Directiva Nacional Periodo 2026 2027",
+          "Acuerdos De Junta Directiva Nacional Periodo 2021 2022",
+          "Acuerdos Junta Directiva Nacional Periodo 2022 2023",
+          "Acuerdos Junta Directiva Nacional Periodo 2023 2024",
+          "Actas Cen 2024 2025",
+          "Actas De Comite Ejecutivo Periodo2025 2026",
+          "Actas De Comite Ejecutivo Periodo 2026 2027",
+          "Asamblea Nacional 2022",
+          "Asamblea Nacional 2023",
+          "Asamblea Nacional 2024",
+          "Asamblea Nacional 2025",
+          "Asamblea Nacional 2026",
+          "Junta Directiva Nacional"
+        ]
+      },
+      {
+        category: "Gobernanza", folders: [
+          "Gobernanza", "Politicas", "Protocolos", "Manuales", "Lineamientos", "Convenios"
+        ]
+      },
+      {
+        category: "Ayuda a Grupos", folders: [
+          "Apertura De Grupo", "Ayuda Grupos"
+        ]
+      },
+      {
+        category: "Formularios", folders: [
+          "Formularios", "Formularios Maximos Reconocimientos"
+        ]
+      },
+      {
+        category: "Programa Educativo", folders: [
+          "Programa Educativo", "Manada", "Tropa", "Comunidad", "Wak", "Emocion Arte"
+        ]
+      },
+      {
+        category: "Recurso Adulto", folders: [
+          "Sistema De Gestion De Adultos", "Kit De Apoyo Para Dirigente"
+        ]
+      },
+      {
+        category: "Operaciones", folders: [
+          "Operaciones 2", "Kit De Herramientas Para Juntas De Grupo", "Kit Buenas Practicas Para Junta De Grupo"
+        ]
+      },
+      {
+        category: "Imagen y Comunicación", folders: [
+          "Imagen Y Comunicacion", "Grafica", "Guia De Uso De Marca", "Fondos De Pantalla",
+          "Tipografias", "Material De Captacion", "Promocionales Ninos", "Plantillas Para Presentaciones"
+        ]
+      },
+      {
+        category: "Ayudas a Programas", folders: [
+          "Ayudas A Programas Edicion 1", "Ayudas A Programas Edicion 2"
+        ]
+      },
+      {
+        category: "Otras categorías", folders: [
+          "Descargas", "Estrategias"
+        ]
+      }
+    ];
+
+    function folderIcon() {
+      return `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/>
+  </svg>`;
+    }
+
+    const categoriesEl = document.getElementById("categories");
+    const searchInput = document.getElementById("search");
+    const emptyState = document.getElementById("empty-state");
+    const countLabel = document.getElementById("count-label");
+    const docCountLabel = document.getElementById("doc-count-label");
+
+    let totalFolders = 0;
+    let totalDocs = 0;
+
+    CATEGORIES.forEach(group => {
+      totalFolders += group.folders.length;
+
+      const section = document.createElement("div");
+      section.className = "category";
+
+      const head = document.createElement("div");
+      head.className = "category-head";
+      head.innerHTML = `<h2>${group.category}</h2><span class="tally">${group.folders.length}</span>`;
+      section.appendChild(head);
+
+      const grid = document.createElement("div");
+      grid.className = "card-grid";
+
+      group.folders.forEach(name => {
+        const docs = (FILES_BY_FOLDER[name] || []);
+        totalDocs += docs.length;
+
+        const a = document.createElement("a");
+        a.className = "folder-card";
+        a.href = "folder.html?c=" + encodeURIComponent(name);
+        a.dataset.name = name.toLowerCase();
+        a.innerHTML = `${folderIcon()}<span class="info"><span class="name">${name}</span><span class="count">${docs.length} documento${docs.length === 1 ? "" : "s"}</span></span>`;
+        grid.appendChild(a);
+      });
+
+      section.appendChild(grid);
+      categoriesEl.appendChild(section);
+    });
+
+    countLabel.textContent = totalFolders;
+    docCountLabel.textContent = totalDocs + " documentos";
+
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.trim().toLowerCase();
+      let visibleFolders = 0;
+
+      document.querySelectorAll(".category").forEach(section => {
+        let anyVisible = false;
+        section.querySelectorAll("a.folder-card").forEach(a => {
+          const match = a.dataset.name.includes(q);
+          a.style.display = match ? "" : "none";
+          if (match) { anyVisible = true; visibleFolders++; }
+        });
+        section.style.display = anyVisible ? "" : "none";
+      });
+
+      emptyState.style.display = visibleFolders === 0 ? "block" : "none";
+      countLabel.textContent = visibleFolders;
+    });
+  </script>
+
+</body>
+
+</html>
